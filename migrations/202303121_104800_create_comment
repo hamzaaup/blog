@@ -1,0 +1,10 @@
+CREATE TABLE `comment`(
+  `id` INT(11) NOT NULL AUTO_INCREMENT ,
+  `userID` INT(11) NOT NULL ,
+  `blogID` INT(11) NOT NULL ,
+  `detail` LONGTEXT NOT NULL ,
+  `status` ENUM('0','1','2') DEFAULT '0' ,
+  `createdAt` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ,
+  PRIMARY KEY (`id`)
+ )
+ENGINE =InnoDB;

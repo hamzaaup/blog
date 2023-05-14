@@ -1,0 +1,52 @@
+Projects:
+==========
+blog -> 1 or manay users post blog
+user -> 1 or many blogs
+admin -> 1 or manay users manage, 1 or manay blogs manage, 1 or manay comments manage,
+comment -> 1 or many users
+
+user:
+id,email,password,status,createdAt
+admin:
+id,email,password,createdAt
+blog:
+id,userID,title,body,image,status,createdAt
+comment:
+id,userID,blogID,details,status,createdAt
+==========
+Questions:
+==========
+What is Database?
+What is primary key?
+What is table?
+What is mysql?
+What are types of columns in mysql with examples and usage?
+=> Note all the types of mysql table columns and explain with example?
+
++++++++++++++++++++++++++++++++++++++++++++++++
+
+What is a Data Type
+Data Types in MySQL
+MySQL String Data Types (Text Formats)
+TEXT Data Type
+BLOB Datatype in MySQL
+CHAR and VARCHAR data type
+BINARY and VARBINARY Types
+ENUM Data Type in MySQL
+SET Data Type
+MySQL Numeric Data Types (Number Formats)
+Integer Data Types
+Boolean Data Type
+Float Data Type
+Double Data Type
+Decimal Data Type
+BIT Data Type
+MySQL Date & Time Data Types
+Date Data Type
+DATETIME & TIMESTAMP
+Time Data Type
+Year Data Type
+MySQL Spatial Data Types
+JSON Data Type
+How to Change Data Type in MySQL
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

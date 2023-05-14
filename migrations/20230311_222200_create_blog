@@ -1,0 +1,16 @@
+CREATE TABLE `blog` ( 
+  `id` INT(11) NOT NULL AUTO_INCREMENT , 
+  `userID` INT(11) NOT NULL ,  
+  `title` VARCHAR(75) NOT NULL ,  
+  `body` LONGTEXT NOT NULL ,
+  `status` ENUM('0','1','2') NOT NULL DEFAULT '0' , 
+  `createdAt` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ,  
+   PRIMARY KEY  (`id`)
+)
+ENGINE = InnoDB;
+
+ALTER TABLE `blog` 
+ CHANGE `status` `status` ENUM('0','1','2') NOT NULL DEFAULT '0' COMMENT '0=pending,1=approved,2=disapproved';
+
+ ALTER TABLE `blog`
+ ADD `image` VARCHAR(25) NOT NULL AFTER `body`;

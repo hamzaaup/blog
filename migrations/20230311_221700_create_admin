@@ -1,0 +1,8 @@
+CREATE TABLE `admin` ( 
+	`id` INT(11) NOT NULL AUTO_INCREMENT ,  
+	`email` VARCHAR(30) NOT NULL ,  
+	`password` VARCHAR(30) NOT NULL ,  
+	`createdAt` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ,    
+	PRIMARY KEY  (`id`)
+) 
+ENGINE = InnoDB;
